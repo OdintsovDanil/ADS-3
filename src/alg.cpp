@@ -23,5 +23,5 @@ int cbinsearch(int *arr, int size, int value) {
             right = mid - 1;
         }
     }
-    return count
+    return count;
 }
