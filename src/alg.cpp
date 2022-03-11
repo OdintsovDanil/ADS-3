@@ -26,5 +26,13 @@ int cbinsearch(int *arr, int size, int value) {
             right = mid - 1;
         }
     }
-    return count;
+    if (count == 0) {
+        if (arr[left] == value) {
+            return 1;
+        }
+        else if (arr[right] == value) {
+            return 1;
+        }
+    }
+    else return count;
 }
